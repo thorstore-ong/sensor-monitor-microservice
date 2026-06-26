@@ -8,7 +8,7 @@ Built as an internship mini project at **IoT.nxt** to understand the data acquis
 
 ## Overview
 
-IoT platforms depend on a continuous stream of telemetry from equipment like generators, meters, and rectifiers. This project simulates that pipeline:
+IoT platforms depend on a continuous stream of telemetry from equipment. This project simulates that pipeline:
 
 1. A POST request delivers raw JSON sensor data to the API
 2. The data is validated — missing required fields throw an error
