@@ -1,0 +1,135 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Thoriso Mokhethi\\source\\repos\\SensorMonitor\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{7C1E35FB-CEED-BAD8-C85F-14622C38CAD0}|SensorMonitor\\SensorMonitor.csproj|c:\\users\\thoriso mokhethi\\source\\repos\\sensormonitor\\sensormonitor\\validation\\telemetryvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7C1E35FB-CEED-BAD8-C85F-14622C38CAD0}|SensorMonitor\\SensorMonitor.csproj|solutionrelative:sensormonitor\\validation\\telemetryvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7C1E35FB-CEED-BAD8-C85F-14622C38CAD0}|SensorMonitor\\SensorMonitor.csproj|c:\\users\\thoriso mokhethi\\source\\repos\\sensormonitor\\sensormonitor\\services\\sensorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7C1E35FB-CEED-BAD8-C85F-14622C38CAD0}|SensorMonitor\\SensorMonitor.csproj|solutionrelative:sensormonitor\\services\\sensorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7C1E35FB-CEED-BAD8-C85F-14622C38CAD0}|SensorMonitor\\SensorMonitor.csproj|c:\\users\\thoriso mokhethi\\source\\repos\\sensormonitor\\sensormonitor\\services\\telemetryprocessor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7C1E35FB-CEED-BAD8-C85F-14622C38CAD0}|SensorMonitor\\SensorMonitor.csproj|solutionrelative:sensormonitor\\services\\telemetryprocessor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7C1E35FB-CEED-BAD8-C85F-14622C38CAD0}|SensorMonitor\\SensorMonitor.csproj|c:\\users\\thoriso mokhethi\\source\\repos\\sensormonitor\\sensormonitor\\controllers\\telemetrycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7C1E35FB-CEED-BAD8-C85F-14622C38CAD0}|SensorMonitor\\SensorMonitor.csproj|solutionrelative:sensormonitor\\controllers\\telemetrycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7C1E35FB-CEED-BAD8-C85F-14622C38CAD0}|SensorMonitor\\SensorMonitor.csproj|c:\\users\\thoriso mokhethi\\source\\repos\\sensormonitor\\sensormonitor\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7C1E35FB-CEED-BAD8-C85F-14622C38CAD0}|SensorMonitor\\SensorMonitor.csproj|solutionrelative:sensormonitor\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7C1E35FB-CEED-BAD8-C85F-14622C38CAD0}|SensorMonitor\\SensorMonitor.csproj|c:\\users\\thoriso mokhethi\\source\\repos\\sensormonitor\\sensormonitor\\normalize\\telemetrynormalizer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7C1E35FB-CEED-BAD8-C85F-14622C38CAD0}|SensorMonitor\\SensorMonitor.csproj|solutionrelative:sensormonitor\\normalize\\telemetrynormalizer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7C1E35FB-CEED-BAD8-C85F-14622C38CAD0}|SensorMonitor\\SensorMonitor.csproj|c:\\users\\thoriso mokhethi\\source\\repos\\sensormonitor\\sensormonitor\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{7C1E35FB-CEED-BAD8-C85F-14622C38CAD0}|SensorMonitor\\SensorMonitor.csproj|solutionrelative:sensormonitor\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "TelemetryProcessor.cs",
+              "DocumentMoniker": "C:\\Users\\Thoriso Mokhethi\\source\\repos\\SensorMonitor\\SensorMonitor\\Services\\TelemetryProcessor.cs",
+              "RelativeDocumentMoniker": "SensorMonitor\\Services\\TelemetryProcessor.cs",
+              "ToolTip": "C:\\Users\\Thoriso Mokhethi\\source\\repos\\SensorMonitor\\SensorMonitor\\Services\\TelemetryProcessor.cs",
+              "RelativeToolTip": "SensorMonitor\\Services\\TelemetryProcessor.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-14T08:33:42.009Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Thoriso Mokhethi\\source\\repos\\SensorMonitor\\SensorMonitor\\Program.cs",
+              "RelativeDocumentMoniker": "SensorMonitor\\Program.cs",
+              "ToolTip": "C:\\Users\\Thoriso Mokhethi\\source\\repos\\SensorMonitor\\SensorMonitor\\Program.cs",
+              "RelativeToolTip": "SensorMonitor\\Program.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABUAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-14T08:25:12.588Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "TelemetryNormalizer.cs",
+              "DocumentMoniker": "C:\\Users\\Thoriso Mokhethi\\source\\repos\\SensorMonitor\\SensorMonitor\\Normalize\\TelemetryNormalizer.cs",
+              "RelativeDocumentMoniker": "SensorMonitor\\Normalize\\TelemetryNormalizer.cs",
+              "ToolTip": "C:\\Users\\Thoriso Mokhethi\\source\\repos\\SensorMonitor\\SensorMonitor\\Normalize\\TelemetryNormalizer.cs",
+              "RelativeToolTip": "SensorMonitor\\Normalize\\TelemetryNormalizer.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAQwCYAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-14T08:17:38.388Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "TelemetryValidator.cs",
+              "DocumentMoniker": "C:\\Users\\Thoriso Mokhethi\\source\\repos\\SensorMonitor\\SensorMonitor\\Validation\\TelemetryValidator.cs",
+              "RelativeDocumentMoniker": "SensorMonitor\\Validation\\TelemetryValidator.cs",
+              "ToolTip": "C:\\Users\\Thoriso Mokhethi\\source\\repos\\SensorMonitor\\SensorMonitor\\Validation\\TelemetryValidator.cs",
+              "RelativeToolTip": "SensorMonitor\\Validation\\TelemetryValidator.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAqwBgAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-14T08:14:00.995Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "SensorService.cs",
+              "DocumentMoniker": "C:\\Users\\Thoriso Mokhethi\\source\\repos\\SensorMonitor\\SensorMonitor\\Services\\SensorService.cs",
+              "RelativeDocumentMoniker": "SensorMonitor\\Services\\SensorService.cs",
+              "ToolTip": "C:\\Users\\Thoriso Mokhethi\\source\\repos\\SensorMonitor\\SensorMonitor\\Services\\SensorService.cs",
+              "RelativeToolTip": "SensorMonitor\\Services\\SensorService.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAwCMAAACFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-14T07:31:49.863Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "TelemetryController.cs",
+              "DocumentMoniker": "C:\\Users\\Thoriso Mokhethi\\source\\repos\\SensorMonitor\\SensorMonitor\\Controllers\\TelemetryController.cs",
+              "RelativeDocumentMoniker": "SensorMonitor\\Controllers\\TelemetryController.cs",
+              "ToolTip": "C:\\Users\\Thoriso Mokhethi\\source\\repos\\SensorMonitor\\SensorMonitor\\Controllers\\TelemetryController.cs",
+              "RelativeToolTip": "SensorMonitor\\Controllers\\TelemetryController.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-13T09:30:08.262Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": ".gitignore",
+              "DocumentMoniker": "C:\\Users\\Thoriso Mokhethi\\source\\repos\\SensorMonitor\\SensorMonitor\\.gitignore",
+              "RelativeDocumentMoniker": "SensorMonitor\\.gitignore",
+              "ToolTip": "C:\\Users\\Thoriso Mokhethi\\source\\repos\\SensorMonitor\\SensorMonitor\\.gitignore",
+              "RelativeToolTip": "SensorMonitor\\.gitignore",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-01-13T09:33:41.394Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

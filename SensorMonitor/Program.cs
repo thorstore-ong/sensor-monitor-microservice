@@ -1,0 +1,59 @@
+using Microsoft.AspNetCore.Connections;
+using SensorMonitor.Database;
+using SensorMonitor.Normalize;
+using SensorMonitor.Services;
+using System.Threading.Channels;
+
+
+var builder = WebApplication.CreateBuilder(args);
+
+
+var telemetryChannel = Channel.CreateUnbounded<object>();
+builder.Services.AddSingleton<Channel<object>>(telemetryChannel);
+
+builder.Services.AddHostedService<TelemetryProcessor>();
+
+//Registering Sensor Service
+builder.Services.AddScoped<SensorService>();
+builder.Services.AddSingleton<TelemetryNormalizer>();
+builder.Services.AddSingleton<IDBConnectionFactory, NpsqlConnectionFactory>();
+builder.Services.AddScoped<ITelemetryRepository, TelemetryRepository>();
+builder.Services.AddSingleton<DatabaseInitializer>();
+
+var initializer = new DatabaseInitializer(
+    new NpsqlConnectionFactory(builder.Configuration), builder.Configuration);
+
+await initializer.InitializeAsync();
+
+// Add services to the container.
+
+builder.Services.AddControllers();
+// Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
+builder.Services.AddOpenApi();
+builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddSwaggerGen();
+
+Console.WriteLine(
+    builder.Configuration.GetConnectionString("DefaultConnection")
+    );
+
+var app = builder.Build();
+
+Dapper.DefaultTypeMap.MatchNamesWithUnderscores = true;
+
+
+// Configure the HTTP request pipeline.
+if (app.Environment.IsDevelopment())
+{
+    // app.MapOpenApi();
+    app.UseSwagger();
+    app.UseSwaggerUI();
+}
+
+app.UseHttpsRedirection();
+
+app.UseAuthorization();
+
+app.MapControllers();
+
+app.Run();
