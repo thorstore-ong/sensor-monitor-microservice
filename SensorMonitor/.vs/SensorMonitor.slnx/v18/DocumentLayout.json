@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Thoriso Mokhethi\\source\\repos\\Sandbox_DataAcquisitionTeam\\src\\thoriso\\sensormonitor\\SensorMonitor\\",
+  "WorkspaceRootPath": "C:\\Users\\Thoriso Mokhethi\\source\\repos\\sensor-monitor-microservice\\SensorMonitor\\",
   "Documents": [],
   "DocumentGroupContainers": [
     {
@@ -13,7 +13,11 @@
           "Children": [
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+              "Name": "ST:129:0:{75c83ab3-5264-45e8-ad32-5c8a41ad477d}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
             }
           ]
         }

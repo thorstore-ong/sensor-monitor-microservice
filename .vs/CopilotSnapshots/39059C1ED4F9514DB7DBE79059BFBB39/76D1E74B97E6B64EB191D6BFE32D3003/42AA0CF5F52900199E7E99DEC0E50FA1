@@ -1,4 +1,4 @@
-using Microsoft.AspNetCore.Connections;
+﻿using Microsoft.AspNetCore.Connections;
 using SensorMonitor.Database;
 using SensorMonitor.Normalize;
 using SensorMonitor.Services;
@@ -7,23 +7,9 @@ using System.Threading.Channels;
 
 var builder = WebApplication.CreateBuilder(args);
 
+
 var telemetryChannel = Channel.CreateUnbounded<object>();
 builder.Services.AddSingleton<Channel<object>>(telemetryChannel);
-
-// Allow Next.js frontend on localhost:3000 to call this API
-builder.Services.AddCors(options =>
-{
-    options.AddPolicy("AllowNextJsLocal", policy =>
-        policy.WithOrigins("http://localhost:3000")
-              .AllowAnyHeader()
-              .AllowAnyMethod()
-              .AllowCredentials());
-});
-
-// Ensure HTTPS redirection knows which HTTPS port to use when running locally
-builder.Services.AddHttpsRedirection(options => {
-    options.HttpsPort = 5001;
-});
 
 builder.Services.AddHostedService<TelemetryProcessor>();
 
@@ -65,8 +51,6 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
-
-app.UseCors("AllowNextJsLocal");
 
 app.UseAuthorization();
 
