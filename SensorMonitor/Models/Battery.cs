@@ -5,6 +5,7 @@ namespace SensorMonitor.Models
 {
     public class Battery
     {
+        public Guid SensorTelemetryId { get; set; }
         public required Guid Id { get; set; }
         public required int Voltage { get; set; }
         public required string Model { get; set; }

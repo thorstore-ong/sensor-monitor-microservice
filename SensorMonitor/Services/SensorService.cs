@@ -23,15 +23,29 @@ namespace SensorMonitor.Services
         {
             var telemetryList = _normalizer.NormalizeGateway(gateway);
 
+            // Parse all sensor data first, so a bad payload doesn't leave orphan telemetry rows
+            var sensorDataList = new List<object>();
+            for (var i = 0; i < gateway.Sensors.Count; i++)
+            {
+                var sensorData = _normalizer.NormalizeSensorData(gateway.Sensors[i]);
+                var telemetryId = telemetryList[i].Id;
+
+                switch (sensorData)
+                {
+                    case Battery b: b.SensorTelemetryId = telemetryId; break;
+                    case Generator g: g.SensorTelemetryId = telemetryId; break;
+                    case Rectifier r: r.SensorTelemetryId = telemetryId; break;
+                }
+                sensorDataList.Add(sensorData);
+            }
+
+            // Telemetry rows must be queued first because the sensor tables reference them
             foreach (var telemetry in telemetryList)
                 await _channel.Writer.WriteAsync(telemetry);
 
-            foreach (var sensor in gateway.Sensors)
-            {
-                var sensorData = _normalizer.NormalizeSensorData(sensor);
+            foreach (var sensorData in sensorDataList)
                 await _channel.Writer.WriteAsync(sensorData);
-            }
-            
+
             return telemetryList;
         }
 

@@ -14,11 +14,14 @@ namespace SensorMonitor.Services
         protected override async Task ExecuteAsync(CancellationToken stoppingToken)
 
         {
+           
             await foreach (var item in _channel.Reader.ReadAllAsync())
             {
-                using var scope = _scopeFactory.CreateScope();
-                var _repo = scope.ServiceProvider.GetRequiredService<ITelemetryRepository>();
+                try
                 {
+                    using var scope = _scopeFactory.CreateScope();
+                    var _repo = scope.ServiceProvider.GetRequiredService<ITelemetryRepository>();
+                    {
                         switch (item)
                         {
                             case SensorTelemetry telemetry:
@@ -37,11 +40,13 @@ namespace SensorMonitor.Services
 
                             default:
                                 throw new InvalidOperationException($"Unknown sensor data type: {item.GetType().Name}");
-
-
                         }
-                   
-                    
+                    }
+                
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine($"Failed to store {item.GetType().Name}: {ex.Message}");
                 }
             }
         }
